@@ -1,11 +1,10 @@
 import { NextResponse } from "next/server";
 
-export async function GET(
-  req: Request,
-  { params }: { params: { id: string } }
-) {
+export async function GET(req: Request, context: { params: { id: string } }) {
+  const { id } = await context.params;
+
   const storyRes = await fetch(
-    `https://hacker-news.firebaseio.com/v0/item/${params.id}.json`
+    `https://hacker-news.firebaseio.com/v0/item/${id}.json`
   );
   if (!storyRes.ok) return NextResponse.error();
   const story = await storyRes.json();
