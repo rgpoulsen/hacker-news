@@ -14,9 +14,10 @@ npm install
 npm run dev # http://localhost:3000
 
 # 3 Build for production
-
+```
 npm run build
 npm start
+```
 
 ## Architecture and trade-offs
 
