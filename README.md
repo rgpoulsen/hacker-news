@@ -3,10 +3,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 ## Getting Started
 
 # 1 Clone & install
-
+```
 git clone https://github.com/rgpoulsen/hacker-news.git
 cd hacker-news
 npm install
+```
 
 # 2 Start the dev server (Turbopack)
 
